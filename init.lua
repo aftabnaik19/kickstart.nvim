@@ -84,6 +84,15 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+--
+vim.o.ignorecase = true
+vim.o.smartcase = true
+if vim.g.vscode then
+  -- VSCode Neovim
+  require 'user.vscode_keymaps'
+else
+  -- Ordinary Neovim
+end
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
